@@ -1,0 +1,8 @@
+<section class="section">
+<div class="columns is-centered">
+<div class="column is-two-thirds">
+    <h1 class="title">Showing User</h1>
+    <%= render "user.html", user: @user %>
+</div>
+</div>
+</section>

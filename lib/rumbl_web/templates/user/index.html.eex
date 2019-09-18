@@ -1,0 +1,16 @@
+<section class="section">
+<div class="columns is-centered">
+<div class="column is-two-thirds">
+<h1 class="title is-3">Listing Users</h1>
+
+<table class="table is-fullwidth is-hoverable">
+<%= for user <- @users do %>
+  <tr>
+    <td><%= render "user.html", user: user %></td>
+    <td><%= link "View", to: Routes.user_path(@conn, :show, user.id) %></td>
+  </tr>
+<%end%>
+</table>
+</div>
+</div>
+</section>

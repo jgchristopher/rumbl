@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rumbl · Phoenix Framework</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+  </head>
+  <body>
+    <nav class="navbar has-shadow is-spaced">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="https://hexdocs.pm/phoenix/overview.html" class="navbar-item">
+                <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo" />
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+            <%= if @current_user do %>
+                <p class="navbar-item"><%= @current_user.username %></p>
+                <%= link "Log out",
+                      to: Routes.session_path(@conn, :delete, @current_user), method: "delete", class: "navbar-item" %>
+            <% else %>
+                <%= link "Login",
+                    to: Routes.session_path(@conn, :new),
+                    class: "navbar-item" %>
+            <% end %>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="container">
+        <p class="message is-info"><%= get_flash(@conn, :info) %></p>
+        <p class="message is-danger"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

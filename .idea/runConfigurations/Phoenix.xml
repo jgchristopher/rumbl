@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Phoenix" type="MixRunConfigurationType" factoryName="Elixir Mix">
+    <module name="rumbl" />
+    <mix>
+      <argument>phx.server</argument>
+    </mix>
+    <module name="rumbl" />
+    <module-filters inherit-application-module-filters="true" />
+    <method v="2" />
+  </configuration>
+</component>

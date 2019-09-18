@@ -1,0 +1,22 @@
+<section class="section">
+    <div class="container">
+        <h1 class="title">Login</h1>
+        <%= form_for @conn,
+                    Routes.session_path(@conn, :create),
+                    [as: :session],
+                    fn f -> %>
+            <div class="field">
+                <label class="label">Username</label>
+                <%= text_input f, :username, placeholder: "Username", class: "input" %>
+                <%= error_tag f, :username %>
+            </div>
+            <div class="field">
+                <label class="label">Password</label>
+                <%= password_input f, :password, placeholder: "Password", class: "input" %>
+                <%= error_tag f, :password %>
+            </div>
+            <%= submit "Login", class: "button" %>
+        <% end %>
+
+    </div>
+</section>

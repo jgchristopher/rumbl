@@ -1,0 +1,39 @@
+<section class="section">
+    <div class="container">
+        <%= form_for @changeset, @action, fn f -> %>
+          <%= if @changeset.action do %>
+            <div class="alert is-danger">
+              <p>Oops, something went wrong! Please check the errors below.</p>
+            </div>
+          <% end %>
+            <div class="field">
+                <%= label f, :url, class: "label" %>
+                <%= text_input f, :url, class: "input" %>
+                <%= error_tag f, :url %>
+            </div>
+            <div class="field">
+                <%= label f, :title, class: "label" %>
+                <%= text_input f, :title, class: "input" %>
+                <%= error_tag f, :title %>
+            </div>
+            <div class="field">
+                <%= label f, :description, class: "label" %>
+                <%= textarea f, :description, class: "textarea" %>
+                <%= error_tag f, :description %>
+            </div>
+            <div class="field">
+                <%= label f, :category_id, "Category", class: "label" %>
+                <div class="control">
+                    <div class="select">
+                <%= select f, :category_id,
+                    category_select_options(@categories),
+                    prompt: "Choose a Category" %>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <%= submit "Save", class: "button" %>
+            </div>
+        <% end %>
+    </div>
+</section>
