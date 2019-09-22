@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/rumbl/accounts_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/support/test_helpers.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/templateLanguages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/rumbl/multimedia_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/rumbl_web/controllers/auth_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/rumbl_web/controllers/video_controller_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/rumbl_web/views/video_view_test.exs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/rumbl_web/controllers/page_controller_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/test/rumbl_web/controllers/page_controller_test.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/support/data_case.ex" beforeDir="false" afterPath="$PROJECT_DIR$/test/support/data_case.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/test.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/controllers/auth.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/controllers/auth.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rumbl/accounts_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/test/rumbl/accounts_test.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/support/conn_case.ex" beforeDir="false" afterPath="$PROJECT_DIR$/test/support/conn_case.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/support/test_helpers.ex" beforeDir="false" afterPath="$PROJECT_DIR$/test/support/test_helpers.ex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +85,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="ExUnit.Case" />
         <option value="Elixir Module" />
       </list>
     </option>
@@ -110,7 +113,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,42 +127,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Elixir Mix ExUnit.Mix ExUnit test/rumbl/accounts_test.exs:56">
-    <configuration name="Mix ExUnit test/rumbl/accounts_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
+  <component name="RunManager" selected="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/views/video_view_test.exs">
+    <configuration name="Mix ExUnit test/rumbl/multimedia_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
-        <argument>test/rumbl/accounts_test.exs</argument>
+        <argument>test/rumbl/multimedia_test.exs</argument>
       </mix-test>
       <working-directory url="file://$PROJECT_DIR$" />
       <module-filters inherit-application-module-filters="true" />
       <method v="2" />
     </configuration>
-    <configuration name="Mix ExUnit test/rumbl/accounts_test.exs:27" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
+    <configuration name="Mix ExUnit test/rumbl_web/controllers/auth_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
-        <argument>test/rumbl/accounts_test.exs:27</argument>
+        <argument>test/rumbl_web/controllers/auth_test.exs</argument>
       </mix-test>
       <working-directory url="file://$PROJECT_DIR$" />
       <module-filters inherit-application-module-filters="true" />
       <method v="2" />
     </configuration>
-    <configuration name="Mix ExUnit test/rumbl/accounts_test.exs:33" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
+    <configuration name="Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
-        <argument>test/rumbl/accounts_test.exs:33</argument>
+        <argument>test/rumbl_web/controllers/video_controller_test.exs</argument>
       </mix-test>
       <working-directory url="file://$PROJECT_DIR$" />
       <module-filters inherit-application-module-filters="true" />
       <method v="2" />
     </configuration>
-    <configuration name="Mix ExUnit test/rumbl/accounts_test.exs:40" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
+    <configuration name="Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs:26" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
-        <argument>test/rumbl/accounts_test.exs:40</argument>
+        <argument>test/rumbl_web/controllers/video_controller_test.exs:26</argument>
       </mix-test>
       <working-directory url="file://$PROJECT_DIR$" />
       <module-filters inherit-application-module-filters="true" />
       <method v="2" />
     </configuration>
-    <configuration name="Mix ExUnit test/rumbl/accounts_test.exs:56" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
+    <configuration name="Mix ExUnit test/rumbl_web/views/video_view_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
-        <argument>test/rumbl/accounts_test.exs:56</argument>
+        <argument>test/rumbl_web/views/video_view_test.exs</argument>
       </mix-test>
       <working-directory url="file://$PROJECT_DIR$" />
       <module-filters inherit-application-module-filters="true" />
@@ -167,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/accounts_test.exs:56" />
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/accounts_test.exs" />
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/accounts_test.exs:40" />
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/accounts_test.exs:33" />
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/accounts_test.exs:27" />
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/views/video_view_test.exs" />
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/controllers/auth_test.exs" />
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs" />
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs:26" />
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/multimedia_test.exs" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +219,8 @@
       <workItem from="1568512117477" duration="4344000" />
       <workItem from="1568825147496" duration="386000" />
       <workItem from="1568825745511" duration="3919000" />
+      <workItem from="1569136819644" duration="217000" />
+      <workItem from="1569137097945" duration="10025000" />
     </task>
     <servers />
   </component>
