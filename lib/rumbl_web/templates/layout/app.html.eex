@@ -20,9 +20,13 @@
             <div class="navbar-end">
             <%= if @current_user do %>
                 <p class="navbar-item"><%= @current_user.username %></p>
+                <%= link "My Videos", to: Routes.video_path(@conn, :index), class: "navbar-item" %>
                 <%= link "Log out",
                       to: Routes.session_path(@conn, :delete, @current_user), method: "delete", class: "navbar-item" %>
             <% else %>
+                <%= link "Register",
+                    to: Routes.user_path(@conn, :new),
+                    class: "navbar-item" %>
                 <%= link "Login",
                     to: Routes.session_path(@conn, :new),
                     class: "navbar-item" %>

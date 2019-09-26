@@ -2,3 +2,10 @@
 
 @import 'custom';
 @import 'bulma';
+@import './video';
+
+.columns {
+  display: flex;
+  flex-direction: row; // this is default
+  align-items: stretch; // this will stretch the children vertically
+}

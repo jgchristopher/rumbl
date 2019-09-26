@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/rumbl/multimedia_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/rumbl_web/controllers/auth_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/rumbl_web/controllers/video_controller_test.exs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/rumbl_web/views/video_view_test.exs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/video.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/controllers/watch_controller.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/watch/show.html.eex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/views/watch_view.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/templateLanguages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/test.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/controllers/auth.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/controllers/auth.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/rumbl/accounts_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/test/rumbl/accounts_test.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/support/conn_case.ex" beforeDir="false" afterPath="$PROJECT_DIR$/test/support/conn_case.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/support/test_helpers.ex" beforeDir="false" afterPath="$PROJECT_DIR$/test/support/test_helpers.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/layout/app.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/templates/video/index.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/video/index.html.eex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +91,7 @@
       <list>
         <option value="ExUnit.Case" />
         <option value="Elixir Module" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -127,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/views/video_view_test.exs">
+  <component name="RunManager" selected="Elixir Mix.Phoenix">
     <configuration name="Mix ExUnit test/rumbl/multimedia_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
         <argument>test/rumbl/multimedia_test.exs</argument>
@@ -183,17 +188,7 @@
       <serviceView>
         <option name="contentProportion" value="0.17384952" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7fffc1d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7fffc1d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@796a2978" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -220,8 +215,17 @@
       <workItem from="1568825147496" duration="386000" />
       <workItem from="1568825745511" duration="3919000" />
       <workItem from="1569136819644" duration="217000" />
-      <workItem from="1569137097945" duration="10025000" />
+      <workItem from="1569137097945" duration="13054000" />
+      <workItem from="1569218459774" duration="3694000" />
     </task>
+    <task id="LOCAL-00001" summary="finished the test_mvc chapter">
+      <created>1569177057977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569177057977</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +243,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished the test_mvc chapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished the test_mvc chapter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
