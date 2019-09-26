@@ -2,6 +2,7 @@
   <dictionary name="johnchristopher">
     <words>
       <w>rumbl</w>
+      <w>slugify</w>
     </words>
   </dictionary>
 </component>

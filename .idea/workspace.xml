@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/video.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/controllers/watch_controller.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/watch/show.html.eex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/views/watch_view.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/templateLanguages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
+    <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="finished chapter 9">
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/multimedia/permalink.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rumbl_web/param.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priv/repo/migrations/20190926103139_add_slug_to_videos.exs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/layout/app.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl/multimedia/video.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl/multimedia/video.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/rumbl_web/templates/video/index.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/video/index.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rumbl/multimedia_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/test/rumbl/multimedia_test.exs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,8 +83,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="ExUnit.Case" />
-        <option value="Elixir Module" />
         <option value="JavaScript File" />
+        <option value="Elixir Module" />
       </list>
     </option>
   </component>
@@ -102,7 +95,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1QCwF5Jx5nUXgKeXJCWnNz4dC9b" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -132,10 +129,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Elixir Mix.Phoenix">
+  <component name="RunManager" selected="Elixir Mix ExUnit.Mix ExUnit test/rumbl/multimedia_test.exs:40">
     <configuration name="Mix ExUnit test/rumbl/multimedia_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
         <argument>test/rumbl/multimedia_test.exs</argument>
+      </mix-test>
+      <working-directory url="file://$PROJECT_DIR$" />
+      <module-filters inherit-application-module-filters="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Mix ExUnit test/rumbl/multimedia_test.exs:40" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
+      <mix-test>
+        <argument>test/rumbl/multimedia_test.exs:40</argument>
       </mix-test>
       <working-directory url="file://$PROJECT_DIR$" />
       <module-filters inherit-application-module-filters="true" />
@@ -157,14 +162,6 @@
       <module-filters inherit-application-module-filters="true" />
       <method v="2" />
     </configuration>
-    <configuration name="Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs:26" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
-      <mix-test>
-        <argument>test/rumbl_web/controllers/video_controller_test.exs:26</argument>
-      </mix-test>
-      <working-directory url="file://$PROJECT_DIR$" />
-      <module-filters inherit-application-module-filters="true" />
-      <method v="2" />
-    </configuration>
     <configuration name="Mix ExUnit test/rumbl_web/views/video_view_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
         <argument>test/rumbl_web/views/video_view_test.exs</argument>
@@ -175,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/multimedia_test.exs:40" />
+        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/multimedia_test.exs" />
         <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/views/video_view_test.exs" />
         <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/controllers/auth_test.exs" />
         <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs" />
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl_web/controllers/video_controller_test.exs:26" />
-        <item itemvalue="Elixir Mix ExUnit.Mix ExUnit test/rumbl/multimedia_test.exs" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +213,7 @@
       <workItem from="1568825745511" duration="3919000" />
       <workItem from="1569136819644" duration="217000" />
       <workItem from="1569137097945" duration="13054000" />
-      <workItem from="1569218459774" duration="3694000" />
+      <workItem from="1569218459774" duration="7115000" />
     </task>
     <task id="LOCAL-00001" summary="finished the test_mvc chapter">
       <created>1569177057977</created>
@@ -225,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569177057977</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rework iframe embedding to allow watching videos and make sure the video height is acceptable">
+      <created>1569467963349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569467963350</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,8 +249,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="finished the test_mvc chapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished the test_mvc chapter" />
+    <MESSAGE value="rework iframe embedding to allow watching videos and make sure the video height is acceptable" />
+    <option name="LAST_COMMIT_MESSAGE" value="rework iframe embedding to allow watching videos and make sure the video height is acceptable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

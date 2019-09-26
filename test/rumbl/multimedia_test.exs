@@ -39,11 +39,14 @@ defmodule Rumbl.MultimediaTest do
 
     test "create_video/2 with valid data creates a video" do
       owner = user_fixture()
-      assert {:ok, %Video{} = video} = Multimedia.create_video(owner, @valid_attrs)
+      assert {:ok, %Video{id: id} = video} = Multimedia.create_video(owner, @valid_attrs)
+
+      IO.inspect video
 
       assert video.description == "desc"
       assert video.title == "title"
       assert video.url == "http://local"
+      assert video.slug == "title"
     end
 
     test "create_video/2 with invalid data returns error changeset" do
