@@ -3,11 +3,9 @@
 <div class="columns">
 	<div class="column is-three-fifths">
 		<h1 class="title"><%= @video.title %></h1>
-		<div>
-		<iframe id="video" type="text/html" width="100%" height="auto"
-          src="https://www.youtube.com/embed/<%= player_id(@video) %>"
-          frameborder="0" allowfullscreen></iframe>
-		</div>
+		<%= content_tag :div, id: "video",
+                data: [id: @video.id, player_id: player_id(@video)] do %>
+        <% end %>
 	</div>
 	<div class="column annotations">
 	    <h3 class="title">Annotations</h3>
