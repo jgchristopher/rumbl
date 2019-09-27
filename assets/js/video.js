@@ -13,7 +13,6 @@ let Video = {
         Player.init(element.id, playerId, () => {
             this.onReady(videoId, socket)
         });
-        //this.onReady(videoId, socket);
     },
 
     onReady(videoId, socket) {
@@ -36,18 +35,18 @@ let Video = {
             this.renderAnnotation(msgContainer, resp);
         });
 
-        vidChannel.on("ping", ({count}) => {
-            console.log("PING", count);
-        });
-
         vidChannel.join()
             .receive("ok", resp => console.log("joined the video channel", resp))
             .receive("error", reason => console.log("join failed", reason))
     },
 
-    renderAnnotation(container, {msg, body, at}) {
+    renderAnnotation(container, {user, body, at}) {
         let template = document.createElement("div");
-        template.innerHTML = `<a href="#" data-seek="${this.esc(user.username)}</b>: ${this.esc(body)}</a>`;
+        template.innerHTML = `
+            <a href="#" data-seek="${this.esc(at)}">
+                <b>${this.esc(user.username)}</b>: ${this.esc(body)}
+            </a>
+         `;
         container.appendChild(template);
         container.scrollTop = container.scrollHeight
 
