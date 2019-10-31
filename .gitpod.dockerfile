@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y && apt-get clean && rm -rf /var/cache/a
 
 USER gitpod
 # Apply user-specific settings
-mix archive.install hex phx_new 1.4.10
+RUN mix archive.install hex phx_new 1.4.10
 
 # Give back control
 USER root
