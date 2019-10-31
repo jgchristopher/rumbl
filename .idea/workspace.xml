@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/rumbl/multimedia/annotation.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priv/repo/migrations/20191030212055_create_annotations.exs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl/multimedia.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl/multimedia.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl/multimedia/video.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl/multimedia/video.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/channels/user_socket.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/channels/user_socket.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/rumbl_web/channels/video_channel.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/channels/video_channel.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/controllers/auth.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/controllers/auth.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/templates/layout/app.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rumbl_web/views/user_view.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rumbl_web/views/user_view.ex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Elixir Mix ExUnit.Mix ExUnit test/rumbl/multimedia_test.exs:40">
+  <component name="RunManager" selected="Elixir Mix.Phoenix">
     <configuration name="Mix ExUnit test/rumbl/multimedia_test.exs" type="MixExUnitRunConfigurationType" factoryName="Elixir Mix ExUnit" temporary="true">
       <mix-test>
         <argument>test/rumbl/multimedia_test.exs</argument>
@@ -209,7 +216,9 @@
       <workItem from="1568825745511" duration="3919000" />
       <workItem from="1569136819644" duration="217000" />
       <workItem from="1569137097945" duration="13054000" />
-      <workItem from="1569218459774" duration="18638000" />
+      <workItem from="1569218459774" duration="19032000" />
+      <workItem from="1572313073145" duration="34000" />
+      <workItem from="1572313153289" duration="4879000" />
     </task>
     <task id="LOCAL-00001" summary="finished the test_mvc chapter">
       <created>1569177057977</created>
@@ -239,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569561899545</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="next checkpoint on channels">
+      <created>1569565361693</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569565361693</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +281,8 @@
     <MESSAGE value="rework iframe embedding to allow watching videos and make sure the video height is acceptable" />
     <MESSAGE value="finished chapter 9 - adding slugs" />
     <MESSAGE value="channels checkpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="channels checkpoint" />
+    <MESSAGE value="next checkpoint on channels" />
+    <option name="LAST_COMMIT_MESSAGE" value="next checkpoint on channels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
