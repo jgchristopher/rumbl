@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitpod.dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.gitpod.dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitpod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitpod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -210,7 +211,7 @@
       <workItem from="1569137097945" duration="13054000" />
       <workItem from="1569218459774" duration="19032000" />
       <workItem from="1572313073145" duration="34000" />
-      <workItem from="1572313153289" duration="6820000" />
+      <workItem from="1572313153289" duration="8613000" />
     </task>
     <task id="LOCAL-00001" summary="finished the test_mvc chapter">
       <created>1569177057977</created>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572488260121</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="need a RUN before mix command">
+      <created>1572488593741</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572488593741</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +298,8 @@
     <MESSAGE value="next checkpoint on channels" />
     <MESSAGE value="persisting annotations" />
     <MESSAGE value="working on gitpod integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on gitpod integration" />
+    <MESSAGE value="need a RUN before mix command" />
+    <option name="LAST_COMMIT_MESSAGE" value="need a RUN before mix command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
