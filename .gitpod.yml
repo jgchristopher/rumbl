@@ -8,8 +8,9 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
   # Install front-end assets
-  - init: cd /workspace/assets && npm install && node node_modules/webpack/bin/webpack.js --mode development && cd /workspace && mix deps.get && mix ecto.create
-    command: mix deps.get && mix ecto.migrate && iex -S mix phx.server
+  - before: mix deps.get
+    init: psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';" && cd /workspace/rumbl/assets && npm install && node node_modules/webpack/bin/webpack.js --mode development && cd /workspace/rumbl && mix ecto.create
+    command: mix ecto.migrate && mix run priv/repo/seeds.exs && iex -S mix phx.server
 
 vscode:
   extensions:
