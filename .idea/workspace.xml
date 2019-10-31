@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a92d7eeb-768e-4ebd-bf7e-a2d2deef8487" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitpod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitpod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dev.exs" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.exs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +210,7 @@
       <workItem from="1569137097945" duration="13054000" />
       <workItem from="1569218459774" duration="19032000" />
       <workItem from="1572313073145" duration="34000" />
-      <workItem from="1572313153289" duration="10290000" />
+      <workItem from="1572313153289" duration="10892000" />
     </task>
     <task id="LOCAL-00001" summary="finished the test_mvc chapter">
       <created>1569177057977</created>
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572490771286</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="more tweaks for initial gitpod support">
+      <created>1572492396589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572492396589</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +321,8 @@
     <MESSAGE value="need a RUN before mix command" />
     <MESSAGE value="trying to fix gitpod build" />
     <MESSAGE value="properly reference the .dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="properly reference the .dockerfile" />
+    <MESSAGE value="more tweaks for initial gitpod support" />
+    <option name="LAST_COMMIT_MESSAGE" value="more tweaks for initial gitpod support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
