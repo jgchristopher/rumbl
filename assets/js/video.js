@@ -16,15 +16,14 @@ let Video = {
     },
 
     onReady(videoId, socket) {
-        console.log("Video id: " + videoId);
-        debugger;
+
+
         let msgContainer = document.getElementById("msg-container");
         let msgInput = document.getElementById("msg-input");
         let postButton = document.getElementById("msg-submit");
         let vidChannel = socket.channel("videos:" + videoId);
 
         postButton.addEventListener("click", e => {
-            debugger;
             let payload = {body: msgInput.value, at: Player.getCurrentTime()}
             vidChannel.push("new_annotation", payload)
                 .receive("error", e => console.log(e))
@@ -36,7 +35,10 @@ let Video = {
         });
 
         vidChannel.join()
-            .receive("ok", resp => console.log("joined the video channel", resp))
+            .receive("ok", ({annotations}) => {
+                console.log(annotations);
+                annotations.forEach(ann => this.renderAnnotation(msgContainer, ann));
+            })
             .receive("error", reason => console.log("join failed", reason))
     },
 
